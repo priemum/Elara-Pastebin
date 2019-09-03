@@ -1,7 +1,7 @@
 {
-  "name": "LadybugDashboard",
+  "name": "elara-pastebin",
   "version": "1.0.0",
-  "description": "Dashboard for Ladybug Bot",
+  "description": "Pastebin for Elara",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
