@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <%- include("partials/header") %>
+    <title>404 | Not Found</title>
+    <%- include("partials/meta", { description: "404 Not Found" }) %>
+    <style>
+        body {
+         color: white;
+         background-color: #1E1E1E;
+        }
+      </style>
+  </head>
+  <body>
+    <%- include("partials/navbar") %>
+    <h2>404 Not Found</h2>
+    <p>Oops, looks like we couldn't find what you were looking for</p>
+    <p>If you wrote the URL yourself double check the spelling!</p>
+    <%- include("partials/scripts") %>
+  </body>
+</html>

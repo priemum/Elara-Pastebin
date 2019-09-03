@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Elara Pastebin</title>
+    <%- include("partials/header") %>
+    <%- include("partials/meta", { description: "A misc pastebin site.!" }) %>
+    <style>
+        body {
+         color: white;
+         background-color: #1E1E1E;
+        }
+      </style>
+  </head>
+  <body>
+    <style color: #000000;></style>
+    <%- include("partials/navbar") %>
+    <%- messages("partials/messages", locals) %>
+    <h1>Well... hello there</h1>
+  </body>
+</html>

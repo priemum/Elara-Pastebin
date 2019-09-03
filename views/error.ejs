@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Error</title>
+    <%- include("partials/header") %>
+    <style>
+        body {
+         color: white;
+         background-color: #1E1E1E;
+        }
+      </style>
+  </head>
+  <body>
+    <%- include("partials/navbar") %>
+    <h1>Oops, an error occured or you did something wrong</h1>
+    <h2><%= message %></h2>
+    <%- include("partials/scripts") %>
+  </body>
+</html>

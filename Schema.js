@@ -1,0 +1,2 @@
+const {model, Schema} = require('mongoose');
+module.exports = model('hastebin', new Schema({id: {type: String, default: ""}, content: {type: String, default: ""}, time: {type: Date, default: ""}, expire: {type: Date, default: ""}}));

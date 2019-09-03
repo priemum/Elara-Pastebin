@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Elara PasteBin</title>
+    <%- include("partials/header") %>
+    <%- include("partials/meta", { description: "Elara Pastebin, store and view pastes on the fly!" }) %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs2015.min.css"/>
+    <style>
+      body {
+       color: white;
+       background-color: #1E1E1E;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include("partials/navbar") %>
+    <pre><code class="lang-<%= lang %>"><%= content %></code></pre>
+    <%- include("partials/scripts") %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Elara Pastebin</title>
+    <%- include("partials/header") %>
+    <%- include("partials/meta", { description: "Paste any code and view it on the fly! currently only a few verified users have access" }) %>
+    <style>
+        body {
+         color: white;
+         background-color: #1E1E1E;
+        }
+      </style>
+  </head>
+  <body>
+    <%- include("partials/navbar") %>
+    <h1>Elara Pastebin</h1>
+    <form method="POST" action="/pastebin">
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea name="content" type="content" class="form-control" id="content"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input name="password" type="password" class="form-control" id="password" placeholder="Password" aria-describedby="passwordHelp">
+        <small id="passwordHelp" class="form-text text-muted">Only a few people get access to this pastebin site.. so bugger off.</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <%- include("partials/scripts") %>
+  </body>
+</html>
